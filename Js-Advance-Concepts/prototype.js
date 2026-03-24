@@ -43,4 +43,4 @@ const bob = new Person("Bob");
 alice.greet(); // Output: Hello, my name is Alice
 bob.greet();   // Output: Hello, my name is Bob
 
-// Both 'alice' and 'bob' share the same 'greet' method.
+// Both 'alice' and 'bob' share the same 'greet' method
