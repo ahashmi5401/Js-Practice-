@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2 class="logo">Task Manager</h2>
+        <div class="centerSidebar">
+          <div class="viewSide">
+            <h4>Views</h4>
+            <div class="viewLink">
+              <p class="viewEachLink" id="allTask">
+                <a>📋 All Task </a><span>0</span>
+              </p>
+              <p class="viewEachLink" id="today">
+                <a>📅 Today</a><span>0</span>
+              </p>
+              <p class="viewEachLink" id="important">
+                <a>⭐ Important</a><span>0</span>
+              </p>
+              <p class="viewEachLink" id="compeleted">
+                <a>✅ Compeleted</a><span>0</span>
+              </p>
+            </div>
+          </div>
+          <div class="viewSide">
+            <h4>Projects</h4>
+            <div class="viewLink">
+              <p class="viewEachLink"><a>🟣 JS mastery</a><span>0</span></p>
+              <p class="viewEachLink"><a>🟢 Portfolio</a><span>0</span></p>
+              <p class="viewEachLink"><a>🔴 Learning</a><span>0</span></p>
+            </div>
+          </div>
+        </div>
+        <!--center sidebar close-->
+        <div class="userProfile">
+          <h2 class="userImage">👤</h2>
+          <div class="userInfo">
+            <p class="name">Ayan .</p>
+            <span class="userPlan">Free</span>
+          </div>
+        </div>
+      </div>
+      <!--sidebar close-->
+      <div class="mainContent">
+        <nav>
+          <p class="navLogo">All tasks</p>
+          <input type="text" placeholder="Search Tasks..." id="navSearch" />
+          <p id="modalBtn">➕ New Task</p>
+        </nav>
+        <div class="filterBtn">
+          <button id="allBtn">All</button>
+          <button id="activeBtn">Active</button>
+          <button id="highPriorityBtn">High Priority</button>
+          <button id="dueTodayBtn">Due Today</button>
+          <button id="compeletedBtn">Compeleted</button>
+        </div>
+        <div class="stats-row">
+          <div class="stat-card">
+            <p class="stat-label">Total</p>
+            <h2 class="stat-value">12</h2>
+            <p class="stat-sub">tasks</p>
+          </div>
+
+          <div class="stat-card">
+            <p class="stat-label">Completed</p>
+            <h2 class="stat-value" style="color: #1d9e75">8</h2>
+            <p class="stat-sub">67% done</p>
+          </div>
+
+          <div class="stat-card">
+            <p class="stat-label">High priority</p>
+            <h2 class="stat-value" style="color: #e24b4a">3</h2>
+            <p class="stat-sub">need attention</p>
+          </div>
+
+          <div class="stat-card">
+            <p class="stat-label">Due today</p>
+            <h2 class="stat-value" style="color: #ba7517">2</h2>
+            <p class="stat-sub">deadlines</p>
+          </div>
+        </div><!--stat row end -->
+        <div id="activeTask">
+          <h2>--Active Task</h2>
+          <div class="task1">
+            <input type="checkbox"> 
+            <div class="task1Box">
+              <div class="task1Top">
+                <p>Build The custom SPA router from scratch</p>
+              </div>
+              <div class="box1Bottom">
+                <p>High</p>
+                <p>Js Mastery</p>
+                <label>📅Today</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </body>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="app.js"></script>
+</html>
