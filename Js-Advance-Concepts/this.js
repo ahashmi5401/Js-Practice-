@@ -5,6 +5,12 @@
 
 
 //THIS IN FUNCTION IT TRGET IT PARENT OBJECT OR IF NOT IN OBJECT IT TARGET WINDOW OBJECT
+
+//00 this value in global scope 
+console.log(this) //window obj
+
+
+
 // 1. In an Object Method
 // When a function is a method of an object, this refers to the owner object: 
 const person = {
