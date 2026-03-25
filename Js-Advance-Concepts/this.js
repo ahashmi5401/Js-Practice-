@@ -29,7 +29,9 @@ function normal() {
 
 normal()
 
-//Arrow Function have not this keyword
+//5. In an Arrow Function 
+//Arrow functions do not have their own this. Instead, they inherit the this value from the
+//  enclosing lexical scope (the scope where they were defined)
 const person2 = {
   firstName: "Muhammad Ayan",
   lastName: "Hashmi",
@@ -40,6 +42,24 @@ const person2 = {
 };
 
 console.log(person2.fullName()); //undefined bcz not have this keyword
+
+
+//EXAMPLE TWO OF Arrow Function how they inherit
+let Obj = {
+  name : "Ayan",
+  skills : ["FrontEnd Developer" , "Data Analyst" , "Data Scientist"],
+  
+  regularFunction : function () {
+    console.log("In Regular Function" , this.name)
+
+     // Arrow function inherits 'this' from the enclosing 'regularFunction' scope
+    const arrowFunc = () => {
+      console.log("In Arrow Function" , this.name)
+    }
+    arrowFunc()
+  }
+}
+Obj.regularFunction()
 
 
 //4 In a Class Constructor or Method
