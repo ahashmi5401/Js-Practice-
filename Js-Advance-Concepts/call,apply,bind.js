@@ -96,6 +96,6 @@ let bindStu1 = bindIntro.bind(bindStudent , "SSUET" , 'ahashmi5401') //does not 
 console.log(bindStu1) //need to call
 
 
-// The new function can be called later
+// The new function can be called laters
 console.log(bindStu1())
 
